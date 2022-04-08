@@ -1,21 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+    rel="stylesheet">
+  <script src="script.js" defer></script>
+
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
-  About
+  <nav>
+    <div class="nav-container">
+      <img src="images/logo.svg" alt="logo">
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links hidden">
+        <div class="triangle"></div>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav-content">
+      <h1>WE ARE CREATIVES</h1>
+      <img src="images/icon-arrow-down.svg" alt="">
+    </div>
+  </nav>
+  <main>
+    <section class="intro">
+      <img class="intro__image" src="images/mobile/image-transform.jpg" alt="egg">
+      <div class="intro__content">
+        <h2>Transform your brand</h2>
+        <p class="p intro__p"> We are a full-service creative agency specializing in helping brands grow fast.
+          Engage your clients through compelling visuals that do most of the marketing for you.</p>
+        <a class="btn btn--yellow" href="#">LEARN MORE</a>
+      </div>
+      <img class="intro__image" src="images/mobile/image-stand-out.jpg" alt="">
+      <div class="intro__content">
+        <h2>Stand out to the right audience</h2>
+        <p class="p intro__p">Using a collaborative formula of designers, researchers, photographers, videographers, and
+          copywriters, we’ll build and extend your brand in digital places. </p>
+        <a class="btn btn--pink" href="#">LEARN MORE</a>
+      </div>
+      <div class="fruits fruits--cherry">
+        <h3>Graphic Design</h3>
+        <p class="p fruits__p">Great design makes you memorable. We deliver artwork that underscores your brand message
+          and captures
+          potential clients’ attention.</p>
+      </div>
+      <div class="fruits fruits--orange">
+        <h3>Photography</h3>
+        <p class="p fruits__p">Increase your credibility by getting the most stunning, high-quality photos that improve
+          your business image.</p>
+    </section>
+    <section class="testimony">
+      <h4>CLIENT TESTIMONIAL</h4>
+      <div class="testimony-card">
+        <img class="testimony-card__image" src="images/image-emily.jpg" alt="">
+        <p class="p testimony-card__p">We put our trust in Sunnyside and they delivered, making sure our needs were met
+          and deadlines were always
+          hit.</p>
+        <p class="testimony-card__name">Emily R.</p>
+        <p class="testimony-card__title">Marketing Director</p>
+      </div>
+      <div class="testimony-card">
+        <img class="testimony-card__image" src="images/image-thomas.jpg" alt="">
+        <p class="p testimony-card__p">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success
+          made it a satisfying and enjoyable experience.</p>
+        <p class="testimony-card__name">Thomas S.</p>
+        <p class="testimony-card__title">Chief Operating Officer</p>
+      </div>
+      <div class="testimony-card">
+        <img class="testimony-card__image" src="images/image-jennie.jpg" alt="">
+        <p class="p testimony-card__p">Incredible end result! Our sales increased over 400% when we worked with
+          Sunnyside. Highly recommended!</p>
+        <p class="testimony-card__name">Jennie F.</p>
+        <p class="testimony-card__title">Business Owner</p>
+      </div>
+    </section>
+    <section class="pictures">
+      <img class="pictures__img" src="images/mobile/image-gallery-milkbottles.jpg" alt="">
+      <img class="pictures__img" src="images/mobile/image-gallery-orange.jpg" alt="">
+      <img class="pictures__img" src="images/mobile/image-gallery-cone.jpg" alt="">
+      <img class="pictures__img" src="images/mobile/image-gallery-sugar-cubes.jpg" alt="">
+    </section>
+    </div>
+  </main>
+  <footer>
+    <p class="footer__logo">sunnyside</p>
+    <div class="footer-links">
+      <p class="footer-links__p">About</p>
+      <p class="footer-links__p">Services</p>
+      <p class="footer-links__p">Projects</p>
+    </div>
+    <div class="social-media">
+      <img class="social-media__img" src="images/icon-facebook.svg" alt="">
+      <img class="social-media__img"  src="images/icon-instagram.svg" alt="">
+      <img class="social-media__img"  src="images/icon-twitter.svg" alt="">
+      <img class="social-media__img"  src="images/icon-pinterest.svg" alt="">
+    </div>
+  </footer>
+  <!-- About
   Services
   Projects
   Contact
@@ -58,11 +170,12 @@
   About
   Services
   Projects
-  Contact
+  Contact -->
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Kenneth Chang</a>.
   </div>
 </body>
+
 </html>
